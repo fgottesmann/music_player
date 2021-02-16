@@ -1,17 +1,16 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Greeting from "../components/greeting";
+import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>PewPewMusicplayer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}></main>
-
-      <footer className={styles.footer}></footer>
+      <Greeting name="Fabian" />
     </div>
   );
 }
