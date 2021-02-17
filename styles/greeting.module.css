@@ -3,3 +3,7 @@
   font-size: 1.2em;
   display: block;
 }
+.trackcard {
+  display: block;
+  border: 1px solid white;
+}
