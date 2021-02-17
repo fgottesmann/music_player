@@ -2,8 +2,5 @@
   font-weight: bolder;
   font-size: 1.2em;
   display: block;
-}
-.trackcard {
-  display: block;
-  border: 1px solid white;
+  text-shadow: 2px 2px 1px #b8235a;
 }
