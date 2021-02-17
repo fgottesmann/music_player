@@ -1,4 +1,4 @@
-import styles from "../styles/greeting.module.css";
+import styles from "../styles/Tracks.module.css";
 
 type Props = {
   imgSrc: string;
@@ -6,19 +6,16 @@ type Props = {
   artist: string;
 };
 
-export default function Tracks(props: Props) {
+export default function Tracks({ imgSrc, title, artist }: Props) {
   return (
-    <div className={styles.trackcard}>
-      <img
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YWThl7JxgusUPJAHKy64qAAAAA%26pid%3DApi&f=1"
-        alt="Two guys with Horse masks playing accordion"
-      />
-      <ol>
-        <li>
-          <h3 className={styles.title}>{props.title}</h3>
-          <p className={styles.artist}>{props.artist}</p>
-        </li>
-      </ol>
-    </div>
+    <li className={styles.trackItem}>
+      <img className={styles.img} src={imgSrc} alt="" />
+      <div title={title} className={styles.title}>
+        {title}
+      </div>
+      <div title={artist} className={styles.artist}>
+        {artist}
+      </div>
+    </li>
   );
 }
