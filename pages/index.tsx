@@ -10,7 +10,6 @@ export default function Home() {
   const [tracks, setTracks] = useState<APITrack[]>([]);
 
   useEffect(() => {
-    console.log("Home page is mounted");
     getTracks().then((newTracks) => {
       setTracks(newTracks);
     });
