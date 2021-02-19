@@ -1,7 +1,12 @@
 import { useRouter } from "next/router";
 import { getTrack } from "../../utils/api";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { APITrack } from "../../utils/api";
+import TrackNavigation from "../../components/trackNavigation";
+// import Tracks from "../../components/tracks";
+import styles from "../../styles/Trackpage.module.css";
+import SingleTrack from "../../components/singleTrack";
+import Player from "../../components/audioPlayer";
 
 export default function Track() {
   const router = useRouter();
@@ -16,16 +21,26 @@ export default function Track() {
     getTrack(id).then((newTrack) => {
       setTrack(newTrack);
     });
-  }, []);
+  }, [id]);
 
   if (!track) {
     return <div>Loading...</div>;
   }
+
+  const singleTrack = (
+    <SingleTrack
+      imgSrc={track.imgSrc}
+      title={track.title}
+      artist={track.artist}
+      url={track.url}
+    />
+  );
+  const url = track.url;
   return (
-    <li>
-      <img src={track.imgSrc} alt="" />
-      <div>Title: {track.title}</div>
-      <div>Artist: {track.artist}</div>
-    </li>
+    <>
+      <TrackNavigation />
+      <div className={styles.singletrack}>{singleTrack}</div>
+      <Player fileUrl={url} />
+    </>
   );
 }

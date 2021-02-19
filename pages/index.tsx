@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Greeting from "../components/Greeting";
 import styles from "../styles/Home.module.css";
-import Tracks from "../components/track";
+import Tracks from "../components/tracks";
 import { useEffect, useState } from "react";
 import { APITrack, getTracks } from "../utils/api";
 import Link from "next/link";
