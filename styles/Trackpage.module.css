@@ -1,0 +1,71 @@
+.singletrack {
+  font-size: x-large;
+  grid-template: 6em 6em 1fr;
+  grid-template-areas:
+    "img"
+    "title"
+    "artist";
+  grid-column-gap: 6em;
+
+  /* border: 1px solid white; */
+  background-image: linear-gradient(
+    to top,
+    #dbdcd7 0%,
+    #dddcd7 24%,
+    #e2c9cc 30%,
+    #e7627d 46%,
+    #b8235a 59%,
+    #801357 71%,
+    #3d1635 84%,
+    #1c1a27 100%
+  );
+}
+.title {
+  font-weight: bold;
+  padding: 8%;
+  grid-area: title;
+  color: var(--primary-text-color);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 2px 2px 1px #b8235a;
+}
+.artist {
+  padding-left: 8%;
+  color: black;
+  padding-bottom: 5em;
+  font-weight: bold;
+  justify-content: center;
+  text-shadow: 2px 2px 1px #b8235a;
+}
+.imgSrc {
+  margin: 10% 0% 0% 17%;
+  border-radius: 50%;
+  animation: pulse infinite 3s;
+  border: 5px solid #801357;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #3d1635;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px #801357;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #b8235a;
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #3d1635;
+    box-shadow: 0 0 0 0 #3d1635;
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 20px #801357;
+    box-shadow: 0 0 0 20px #801357;
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 #b8235a;
+    box-shadow: 0 0 0 0 #b8235a;
+  }
+}
