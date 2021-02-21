@@ -32,7 +32,7 @@ export default function Track() {
       imgSrc={track.imgSrc}
       title={track.title}
       artist={track.artist}
-      url={track.url}
+      // url={track.url}
     />
   );
   const url = track.url;
