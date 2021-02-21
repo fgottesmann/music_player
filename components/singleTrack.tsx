@@ -8,7 +8,7 @@ type Props = {
 
 export default function SingleTrack(props: Props) {
   const singleTrackContent = (
-    <div>
+    <div className={styles.overallContainer}>
       <div className={styles.container}>
         <div className={styles.pulse}>
           <img className={styles.imgSrc} src={props.imgSrc} />

@@ -1,13 +1,16 @@
+.overallContainer {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
 .singletrack {
   font-size: x-large;
-  grid-template: 6em 6em 1fr;
   grid-template-areas:
     "img"
     "title"
     "artist";
   grid-column-gap: 6em;
-
-  /* border: 1px solid white; */
   background-image: linear-gradient(
     to top,
     #dbdcd7 0%,
@@ -19,10 +22,13 @@
     #3d1635 84%,
     #1c1a27 100%
   );
+  width: auto;
 }
 .title {
   font-weight: bold;
-  padding: 8%;
+  margin-left: 8%;
+  margin-top: 20%;
+  margin-bottom: 10%;
   grid-area: title;
   color: var(--primary-text-color);
   text-overflow: ellipsis;
@@ -39,10 +45,14 @@
   text-shadow: 2px 2px 1px #b8235a;
 }
 .imgSrc {
-  margin: 10% 0% 0% 17%;
   border-radius: 50%;
   animation: pulse infinite 3s;
   border: 5px solid #801357;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @-webkit-keyframes pulse {
   0% {
