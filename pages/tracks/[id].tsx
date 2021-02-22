@@ -33,7 +33,7 @@ export default function Track() {
       artist={track.artist}
     />
   );
-  const url = track.url;
+  // const url = track.url;
   return (
     <div>
       <main>
