@@ -1,11 +1,12 @@
 .container {
   display: grid;
-  padding: 20px;
+  padding-right: 10%;
+  width: auto;
 }
 
 .list {
   margin: 0;
-  padding: 0;
+  padding-bottom: 8em;
   display: grid;
-  row-gap: 0.7em;
+  row-gap: 1em;
 }

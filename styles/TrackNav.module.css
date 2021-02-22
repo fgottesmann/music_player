@@ -1,0 +1,73 @@
+.container {
+  height: 4em;
+  background-color: #1c1a27;
+  width: 100%;
+}
+
+.returnButton {
+  color: black;
+  background-image: linear-gradient(
+    to top,
+    #dbdcd7 0%,
+    #dddcd7 24%,
+    #e2c9cc 30%,
+    #e7627d 46%,
+    #b8235a 59%,
+    #801357 71%,
+    #3d1635 84%,
+    #1c1a27 100%
+  );
+  font-weight: bold;
+  text-shadow: 2px 2px 1px #b8235a;
+}
+
+.returnButton:focus {
+  outline: none;
+}
+.headtext {
+  color: white;
+  padding-right: 8%;
+  text-shadow: 2px 2px 1px #b8235a;
+  text-align: right;
+}
+
+/* ----------------Hover-Button------------------- */
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.btnBtn2 {
+  flex: 1 auto;
+  margin: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  background: #eee;
+  transition: all 0.5s ease-out;
+  cursor: none;
+}
+.Gradient {
+  background-color: #fff;
+}
+.rowGradient .btnBtn2 {
+  background-image: linear-gradient(
+    135deg,
+    #1c1a27 0%,
+    #b8235a 51%,
+    #1c1a27 100%
+  );
+  color: #fff;
+  border-radius: 4px;
+  background-size: 200% auto;
+  box-shadow: 1px 1px 15px 1px #e7627d;
+}
+.rowGradient .btnBtn2:hover {
+  background-position: right center;
+}
