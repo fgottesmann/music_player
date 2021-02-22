@@ -1,9 +1,3 @@
-.overallContainer {
-  display: block;
-  height: auto;
-  width: auto;
-}
-
 .singletrack {
   font-size: x-large;
   grid-template-areas:
@@ -48,11 +42,13 @@
   border-radius: 50%;
   animation: pulse infinite 3s;
   border: 5px solid #801357;
-  height: auto;
-  max-width: 100%;
+  max-width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 60%;
+  margin-top: 10%;
+  aspect-ratio: 1 / 1;
 }
 @-webkit-keyframes pulse {
   0% {
