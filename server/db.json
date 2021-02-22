@@ -5,28 +5,42 @@
       "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YWThl7JxgusUPJAHKy64qAAAAA%26pid%3DApi&f=1",
       "title": "Bumble Bee",
       "artist": "Night Lovell",
-      "url": "bass.wav"
+      "url": "/bass.wav"
     },
     {
       "id": "please_dont_go",
       "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YWThl7JxgusUPJAHKy64qAAAAA%26pid%3DApi&f=1",
       "title": "PLEASE DON'T GO",
       "artist": "Night Lovell",
-      "url": "bass.wav"
+      "url": "/bass.wav"
     },
     {
       "id": "champion_of_death",
       "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.gET8RM4DvcU5NMkXwWSIMQHaHP%26pid%3DApi&f=1",
       "title": "Champion of Death",
       "artist": "$uicideboy$",
-      "url": "bass.wav"
+      "url": "/bass.wav"
     },
     {
       "id": "suicidal_thoughts_in_the_back_of_the_cadillac_pt.2",
       "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ES5bYbRDZDRYiVw54m8y-QAAAA%26pid%3DApi&f=1",
       "title": "Suicidal Thoughts in the Back of the Cadillac Pt.2",
       "artist": "Pouya",
-      "url": "bass.wav"
+      "url": "/bass.wav"
+    },
+    {
+      "id": "invincible",
+      "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.socastsrm.com%2Fwordpress%2Fwp-content%2Fblogs.dir%2F2162%2Ffiles%2F2020%2F02%2Fpop-smoke.jpg&f=1&nofb=1",
+      "title": "Invincible",
+      "artist": "Pop Smoke",
+      "url": "/bass.wav"
+    },
+    {
+      "id": "star_shopping",
+      "imgSrc": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fksassets.timeincuk.net%2Fwp%2Fuploads%2Fsites%2F55%2F2017%2F11%2FLil-Peep-2.jpg&f=1&nofb=1",
+      "title": "Star Shopping",
+      "artist": "Lil Peep",
+      "url": "/bass.wav"
     }
   ]
 }
