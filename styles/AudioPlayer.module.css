@@ -1,4 +1,11 @@
-.audioplayer {
-  background-color: #dbdcd7;
+.audioPlayer {
+  background: #dbdcd7;
   width: 100%;
+  display: grid;
+  justify-items: center;
+  padding-bottom: 5%;
+}
+
+.audioPlayer:focus {
+  outline: none;
 }
