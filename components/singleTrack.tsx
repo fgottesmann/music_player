@@ -15,11 +15,7 @@ export default function SingleTrack(props: Props) {
         </div>
       </div>
       <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className={styles.equilizer}
-          viewBox="0 0 128 128"
-        >
+        <svg className={styles.equilizer} viewBox="0 0 128 128">
           <g>
             <title>Audio Equilizer</title>
             <rect

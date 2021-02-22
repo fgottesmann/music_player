@@ -7,9 +7,11 @@ type AudioOutput = {
 export default function Player(props: AudioOutput) {
   const fileAudio = (
     <div className={styles.audioplayerDiv}>
-      <audio className={styles.audioplayer} controls src={props.fileUrl}>
-        blalblalalalalallalala{" "}
-      </audio>
+      <audio
+        className={styles.audioplayer}
+        controls
+        src={props.fileUrl}
+      ></audio>
     </div>
   );
   return fileAudio;

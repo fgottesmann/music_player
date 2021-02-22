@@ -3,10 +3,9 @@ import { getTrack } from "../../utils/api";
 import React, { useEffect, useState } from "react";
 import { APITrack } from "../../utils/api";
 import TrackNavigation from "../../components/trackNavigation";
-// import Tracks from "../../components/tracks";
 import styles from "../../styles/Trackpage.module.css";
 import SingleTrack from "../../components/singleTrack";
-import Player from "../../components/audioPlayer";
+import Player from "../../components/AudioPlayer1";
 
 export default function Track() {
   const router = useRouter();
@@ -36,10 +35,17 @@ export default function Track() {
   );
   const url = track.url;
   return (
-    <>
-      <TrackNavigation />
-      <div className={styles.singletrack}>{singleTrack}</div>
-      <Player fileUrl={url} />
-    </>
+    <div>
+      <main>
+        <>
+          <TrackNavigation />
+          <div className={styles.singletrack}>{singleTrack}</div>
+          {/* <Player fileUrl={url} /> */}
+        </>
+      </main>
+      <footer>
+        <Player fileUrl={track.url} />
+      </footer>
+    </div>
   );
 }
