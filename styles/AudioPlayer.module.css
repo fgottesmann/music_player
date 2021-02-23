@@ -9,3 +9,37 @@
 .audioPlayer:focus {
   outline: none;
 }
+
+/* --------------------------------------- */
+.duration[type="range"] {
+  -webkit-appearance: none;
+  width: 80%;
+  background: transparent;
+  margin-bottom: 4%;
+}
+
+.duration[type="range"]:focus {
+  outline: none;
+}
+
+.duration[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #e2c9cc;
+  height: 30px;
+  width: 6px;
+  border-radius: 90%;
+  background: #e2c9cc;
+  cursor: pointer;
+  margin-top: -14px;
+  box-shadow: 1px 1px 1px #801357, 1px 1px 2px #801357;
+}
+
+.duration[type="range"]::-webkit-slider-runnable-track {
+  width: 80%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #e2c9cc, 1px 1px 2px #e2c9cc;
+  background: #801357;
+  border-radius: 90%;
+  border: 0.2px solid #e2c9cc;
+}
