@@ -43,3 +43,10 @@
   border-radius: 90%;
   border: 0.2px solid #e2c9cc;
 }
+.btn {
+  background: #dbdcd7;
+  border-color: #dbdcd7;
+  background-image: none;
+  outline: 0;
+  border-radius: 20px;
+}
