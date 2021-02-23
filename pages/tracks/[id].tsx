@@ -6,6 +6,7 @@ import TrackNavigation from "../../components/trackNavigation";
 import styles from "../../styles/Trackpage.module.css";
 import SingleTrack from "../../components/singleTrack";
 import Player from "../../components/AudioPlayer1";
+import Head from "next/head";
 
 export default function Track() {
   const router = useRouter();
@@ -33,9 +34,14 @@ export default function Track() {
       artist={track.artist}
     />
   );
-  // const url = track.url;
+
   return (
     <div>
+      <Head>
+        <title>{track.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <main>
         <>
           <TrackNavigation />
