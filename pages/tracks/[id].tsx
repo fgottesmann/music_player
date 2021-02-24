@@ -8,24 +8,24 @@ import SingleTrack from "../../components/singleTrack";
 import Player from "../../components/AudioPlayer1";
 import Head from "next/head";
 import useLocalStorage from "../../hooks/useLocalStorage";
-import Id from "../api/tracks/[id]";
 
 export default function Track() {
   const router = useRouter();
-  const { id } = router.query;
+  const { id: idQuery } = router.query;
+  if (!idQuery) {
+    return null;
+  }
+  const id = typeof idQuery === "string" ? idQuery : idQuery[0];
 
   const [track, setTrack] = useState<APITrack>(null);
 
-  const [favoriteSongs, setFavoriteSongs] = useLocalStorage(
+  const [favoriteSongs, setFavoriteSongs] = useLocalStorage<string[]>(
     "favoriteSongs",
     []
   );
   const favorite = favoriteSongs.includes(id);
 
   useEffect(() => {
-    if (typeof id !== "string") {
-      return;
-    }
     getTrack(id).then((newTrack) => {
       setTrack(newTrack);
     });
@@ -34,7 +34,7 @@ export default function Track() {
   const handleFavoriteClick = () => {
     if (favorite) {
       const newFavoriteSongs = favoriteSongs.filter(
-        (favoriteSong) => favoriteSong !== Id
+        (favoriteSong) => favoriteSong !== id
       );
       setFavoriteSongs(newFavoriteSongs);
     } else {
@@ -69,7 +69,7 @@ export default function Track() {
         </>
       </main>
       <button className={styles.favbutton} onClick={handleFavoriteClick}>
-        {favorite ? "💘" : "🖤"}
+        {favorite ? "🔥" : "🖤"}
       </button>
       <footer>
         <Player fileUrl={track.url} />
