@@ -36,17 +36,13 @@
 
 .duration[type="range"]::-webkit-slider-runnable-track {
   width: 80%;
-  height: 8.4px;
+  height: 6.4px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #e2c9cc, 1px 1px 2px #e2c9cc;
   background: #801357;
   border-radius: 90%;
-  border: 0.2px solid #e2c9cc;
 }
 .btn {
   background: #dbdcd7;
-  border-color: #dbdcd7;
-  background-image: none;
   outline: 0;
-  border-radius: 20px;
+  border: none;
 }

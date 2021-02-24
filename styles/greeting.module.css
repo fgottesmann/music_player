@@ -3,4 +3,9 @@
   font-size: 1.2em;
   display: block;
   text-shadow: 2px 2px 1px #b8235a;
+  margin-left: 5%;
+}
+
+.greeting {
+  margin-left: 5%;
 }
