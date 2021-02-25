@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import { getTrack } from "../../utils/api";
+// import { getTrack } from "../../utils/api";
 import React, { useEffect, useState } from "react";
-import { APITrack, deleteTrack } from "../../utils/api";
+import { APITrack, deleteTrack, getTrack } from "../../utils/api";
 import TrackNavigation from "../../components/trackNavigation";
 import styles from "../../styles/Trackpage.module.css";
 import SingleTrack from "../../components/singleTrack";
@@ -42,6 +42,11 @@ export default function Track() {
     }
   };
 
+  const handleDeleteClick = async () => {
+    await deleteTrack(track.id);
+    router.back();
+  };
+
   if (!track) {
     return <div>Loading...</div>;
   }
@@ -65,17 +70,13 @@ export default function Track() {
         <>
           <TrackNavigation />
           <div className={styles.singletrack}>{singleTrack}</div>
-          {/* <Player fileUrl={url} /> */}
         </>
       </main>
       <div className={styles.stateButtonContainer}>
         <button className={styles.favbutton} onClick={handleFavoriteClick}>
           {favorite ? "🔥" : "🖤"}
         </button>
-        <button
-          className={styles.deleteBtn}
-          onClick={() => deleteTrack(track.id)}
-        >
+        <button className={styles.deleteBtn} onClick={handleDeleteClick}>
           <img src="/delete_btn.svg" />
         </button>
       </div>

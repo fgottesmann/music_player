@@ -12,3 +12,15 @@ GET http://localhost:3000/api/tracks/bumble_bee
 
 ### DELETE a single track
 DELETE http://localhost:3000/api/tracks/bumble_bee
+
+### POST a new track
+POST http://localhost:3000/api/tracks
+Content-Type: application/json
+
+{
+    "id": "rockstar",
+    "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmp3mansion.org%2Fwp-content%2Fuploads%2F2019%2F03%2FPost-Malone.jpg&f=1&nofb=1",
+    "title": "rockstar",
+    "artist": "Post Malone",
+    "url": "/public/PostMalone_rockstar.mp3"
+}
