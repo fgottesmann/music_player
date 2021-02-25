@@ -44,9 +44,14 @@
   margin-top: 10%;
   aspect-ratio: 1 / 1;
 }
+
+.stateButtonContainer {
+  display: flex;
+  justify-content: center;
+}
 .favbutton {
   display: block;
-  margin-left: auto;
+  margin-left: 46%;
   margin-right: auto;
   margin-bottom: 5%;
   border: none;
@@ -54,6 +59,12 @@
 }
 .favbutton:focus {
   outline: none;
+}
+
+.deleteBtn {
+  border: none;
+  background: #dbdcd7;
+  outline: 0;
 }
 
 @-webkit-keyframes pulse {

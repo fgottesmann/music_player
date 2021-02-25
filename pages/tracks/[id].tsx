@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { getTrack } from "../../utils/api";
 import React, { useEffect, useState } from "react";
-import { APITrack } from "../../utils/api";
+import { APITrack, deleteTrack } from "../../utils/api";
 import TrackNavigation from "../../components/trackNavigation";
 import styles from "../../styles/Trackpage.module.css";
 import SingleTrack from "../../components/singleTrack";
@@ -68,9 +68,17 @@ export default function Track() {
           {/* <Player fileUrl={url} /> */}
         </>
       </main>
-      <button className={styles.favbutton} onClick={handleFavoriteClick}>
-        {favorite ? "🔥" : "🖤"}
-      </button>
+      <div className={styles.stateButtonContainer}>
+        <button className={styles.favbutton} onClick={handleFavoriteClick}>
+          {favorite ? "🔥" : "🖤"}
+        </button>
+        <button
+          className={styles.deleteBtn}
+          onClick={() => deleteTrack(track.id)}
+        >
+          <img src="/delete_btn.svg" />
+        </button>
+      </div>
       <footer>
         <Player fileUrl={track.url} />
       </footer>

@@ -18,3 +18,9 @@ export async function getTracks(): Promise<APITrack[]> {
 export async function getTrack(id: string): Promise<APITrack> {
   return await fetchURL<APITrack>(`/api/tracks/${id}`);
 }
+
+export async function deleteTrack(id) {
+  await fetch(`/api/tracks/${id}`, {
+    method: "DELETE",
+  });
+}
