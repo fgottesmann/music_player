@@ -2,6 +2,9 @@
   display: grid;
   padding-right: 10%;
   width: auto;
+  height: 100vh;
+  background-image: url("https://images.wallpaperscraft.com/image/palm_trees_dawn_birds_125099_3840x2160.jpg");
+  overflow: auto;
 }
 
 .list {
