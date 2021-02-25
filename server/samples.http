@@ -1,0 +1,14 @@
+### GET HTML of index page
+GET http://localhost:3000
+
+### GET HTML of track page
+GET http://localhost:3000/tracks/bumble_bee
+
+### GET all tracks
+GET http://localhost:3000/api/tracks
+
+### GET a single track
+GET http://localhost:3000/api/tracks/bumble_bee
+
+### DELETE a single track
+DELETE http://localhost:3000/api/tracks/bumble_bee
